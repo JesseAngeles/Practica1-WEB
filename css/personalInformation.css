@@ -1,0 +1,135 @@
+section {
+    padding: 20px;
+}
+
+#profile-image img {
+    display: block;
+    max-width: 300px;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+#contact-form {
+    max-width: 500px;
+    margin: auto;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin: 10px 0 5px;
+}
+
+#contact-form input, 
+#contact-form textarea,
+#contact-form button {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#contact-form button {
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background: #ddd;
+    color: black;
+}
+
+#profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espacio entre la imagen y los datos personales */
+    padding: 20px;
+}
+
+#profile-image img {
+    display: block;
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+#personal-info {
+    max-width: 60%; /* Ajusta según necesites */
+}
+
+#profile-section {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url('../assets/img/background.jpg'); /* Actualiza con el path correcto */
+    background-size: cover; /* Cubre todo el espacio disponible */
+    background-position: center; /* Centra la imagen en el contenedor */
+}
+
+#social-media a {
+    margin: 10px;
+    color: #333; /* Cambia el color según tu preferencia */
+    font-size: 24px; /* Ajusta el tamaño como prefieras */
+}
+
+#social-media a:hover {
+    color: #007bff; /* Cambia el color al pasar el mouse por encima */
+}
+
+#contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Ajusta el espacio entre el ícono y el texto */
+}
+
+#contact-info i {
+    color: #333; /* O cualquier color que prefieras */
+}
+
+#contact-info a {
+    color: #007bff; /* Color de los enlaces */
+    text-decoration: none; /* Opcional: elimina el subrayado */
+}
+
+#contact-info a:hover {
+    text-decoration: underline; /* Opcional: añade subrayado al pasar el mouse */
+}
+
+#about-me {
+    font-family: Arial, sans-serif; /* Asegura una tipografía clara y legible */
+    color: #333; /* Color de texto oscuro para legibilidad */
+    background-color: #f0f0f0; /* Un fondo claro para contraste */
+    padding: 20px; /* Espaciado interno para evitar que el texto toque los bordes */
+    margin: 20px auto; /* Margen superior e inferior para separación, y auto para centrar horizontalmente */
+    max-width: 800px; /* Limita el ancho máximo para mejorar la legibilidad en pantallas grandes */
+    border-radius: 10px; /* Bordes redondeados para un look moderno */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Una sutil sombra para dar profundidad */
+    line-height: 1.6; /* Espaciado entre líneas para una lectura más cómoda */
+    text-align: justify; /* Alinea el texto justificado para un bloque uniforme */
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between; /* Ajusta el espacio entre las secciones */
+    align-items: stretch; /* Estira los elementos hijos para que todos tengan la misma altura */
+    flex-wrap: wrap; /* Permite el ajuste de los elementos en pantallas pequeñas */
+    margin: 20px auto;
+    max-width: 1200px; /* O ajusta según tus necesidades */
+    padding: 20px;
+}
+
+#about-me, #contact-info {
+    flex: 1; /* Permite que cada sección crezca y ocupe un espacio igual en el contenedor */
+    margin: 10px; /* Añade un poco de espacio entre las secciones */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Estilo opcional para sombra */
+    border-radius: 10px; /* Estilo opcional para bordes redondeados */
+    background-color: rgba(255, 255, 255, 0.8); /* Estilo opcional para fondo */
+}

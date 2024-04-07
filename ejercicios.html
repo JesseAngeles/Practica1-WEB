@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style_ejercicios.css">
     <script src="./js/ejercicios.js" defer></script>
     <title>Ejercicios JS</title>
 </head>
@@ -12,10 +13,9 @@
 <body>
     <nav>
         <a href="./index.html">Inicio</a>
-        <a href="./personalInformation.html">Acerca de</a>
-        <a href="./hobbies.html">hobbies</a>
         <a href="./ejercicios.html">Ejercicios</a>
         <a href="./cosie.html">COSIE</a>
+        <a href="./personalInformation.html">Información personal</a>
     </nav>
 
     <div>
@@ -23,6 +23,8 @@
             <h1>Determinar si es par o impar</h1>
             Numero: <input type="number" name="in_ej1" id="in_ej1">
             <input type="button" value="Evaluar" id="ej1">
+
+            <p id="res_ej1"></p>
         </form>
     </div>
 
@@ -45,9 +47,10 @@
             Numeros: <input type="number" name="mul1_ej3" id="mul1_ej3">
             <input type="number" name="mul2_ej3" id="mul2_ej3">
             <input type="button" value="Calcular" id="ej3">
+            
+            <p id="res3"></p>
         </form>
 
-        <p id="res3"></p>
     </div>
 
 
@@ -59,16 +62,16 @@
             <input type="button" value="Agregar" id="add_ej4">
             <input type="button" value="Limpiar" id="clear_ej4">
             <input type="button" value="Buscar" id="find_ej4">
-        </form>
         
-        <table>
-            <tr id="pos_ej4">
-                <td>Posiciones</td>
-            </tr>
-            <tr id="val_ej4">
-                <td>Valores</td>
-            </tr>
-        </table>
+            <table>
+                <tr id="pos_ej4">
+                    <td>Posiciones</td>
+                </tr>
+                <tr id="val_ej4">
+                    <td>Valores</td>
+                </tr>
+            </table>
+        </form>    
     </div>
 
     <div>
@@ -78,19 +81,20 @@
             Segundo arreglo: <input type="number" name="in2_ej5" id="in2_ej5">
             <input type="button" value="Sumar" id="add_ej5">
             <input type="button" value="Limpiar" id="clear_ej5">
+            <table>
+                <tr id="a_ej5">
+                    <td>A: </td>
+                </tr>
+                <tr id="b_ej5">
+                    <td>B: </td>
+                </tr>
+                <tr id="c_ej5">
+                    <td>C: </td>
+                </tr>
+            </table>
         </form>
 
-        <table>
-            <tr id="a_ej5">
-                <td>A: </td>
-            </tr>
-            <tr id="b_ej5">
-                <td>B: </td>
-            </tr>
-            <tr id="c_ej5">
-                <td>C: </td>
-            </tr>
-        </table>
+        
     </div>
 
     <div>
@@ -100,33 +104,63 @@
             <input type="button" value="Agregar" id="add_ej6">
             <input type="button" value="Limpiar" id="clear_ej6">
             <input type="button" value="Calcular" id="average_ej6">
+            <table>
+                <tr id="pos_ej6">
+                    <td>Posiciones</td>
+                </tr>
+                <tr id="val_ej6">
+                    <td>Valores</td>
+                </tr>
+            </table>
         </form>
 
-        <table>
-            <tr id="pos_ej6">
-                <td>Posiciones</td>
-            </tr>
-            <tr id="val_ej6">
-                <td>Valores</td>
-            </tr>
-        </table>
+        
     </div>
 
     <div>
         <form action="" method="get">
             <h1>Ordenar arreglo</h1>
-            Numero: <input type="number" name="ej7" id="ej7">
-            <input type="button" value="Ordenar">
+            Numero: <input type="number" name="in_ej7" id="in_ej7">
+            <input type="button" value="Agregar" id="add_ej7">
+            <input type="button" value="Limpiar" id="clear_ej7">
+            <input type="button" value="Ordenar" id="order_ej7">
+            <table>
+                <tr id="pos_ej7">
+                    <td>Posiciones</td>
+                </tr>
+                <tr id="val_ej7">
+                    <td>Valores</td>
+                </tr>
+            </table>
         </form>
+
+        
+
     </div>
 
     <div>
         <form action="" method="get">
             <h1>Analizador de texto</h1>
-            Texto: <input type="text" name="ej8" id="ej8">
-            <input type="button" value="Analizar">
+            Texto: <input type="text" name="in_ej8" id="in_ej8">
+            <input type="button" value="Analizar" id="analize_ej8">
+            <table>
+                <tr>
+                    <td>Longitud: </td>
+                    <td id="length_ej8"></td>
+                </tr>
+                <tr>
+                    <td>Minusculas: </td>
+                    <td id="lower_ej8"></td>
+                </tr>
+                <tr>
+                    <td>Mayusculas: </td>
+                    <td id="upper_ej8"></td>
+                </tr>
+            </table>
         </form>
     </div>
+
+        
 </body>
 
 </html>

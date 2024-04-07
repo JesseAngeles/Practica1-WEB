@@ -4,17 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/nav.css">
-    <title>Titulo</title>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Algoritmos</title>
 </head>
 
 <body>
     <nav>
         <a href="./index.html">Inicio</a>
-        <a href="./personalInformation.html">Acerca de</a>
-        <a href="./hobbies.html">hobbies</a>
         <a href="./ejercicios.html">Ejercicios</a>
         <a href="./cosie.html">COSIE</a>
+        <a href="./personalInformation.html">Información personal</a>
     </nav>
+    
+    <header>
+        <h1>Algoritmos Importantes en Ciencias de la Computación</h1>
+    </header>
+
+    <section class="introduction">
+        <h3>¿Qué es un Algoritmo?</h3>
+        <p>Un algoritmo es un conjunto finito de instrucciones claras y precisas destinadas a solucionar un problema o llevar a cabo una tarea. Funciona como una receta en la cocina, donde cada paso te acerca más al plato final. En el contexto de la informática y las matemáticas, los algoritmos procesan datos de entrada para producir un resultado deseado, bajo la premisa de que deben ser realizables en un tiempo finito. Desde buscar en una lista, ordenar números, hasta tareas complejas como la optimización de rutas o el análisis de datos, los algoritmos juegan un papel fundamental en el desarrollo de software y la resolución de problemas computacionales.</p>
+    </section>
+
+    <section class="algorithm" id="kruskal">
+        <img src="assets/img/kruskal.png" alt="Ilustración del Algoritmo de Kruskal">
+        <div>
+            <h1><center>Algoritmo de Kruskal</center></h1>
+            <p>El Algoritmo de Kruskal encuentra un árbol de expansión mínimo para un grafo conexo ponderado no dirigido. Funciona ordenando todas las aristas del grafo por su peso y seleccionándolas de manera ascendente, siempre que no formen un ciclo.</p>
+            <p>Complejidad Temporal: <b>O(E log V)</b></p>
+            <p>Complejidad Espacial: <b>O(V)</b></p>
+        </div>
+    </section>
+    
+    <section class="algorithm" id="bfs">
+        <img src="assets/img/BFS.webp" alt="Ilustración del Breadth-First Search (BFS)">
+        <div>
+            <h1><center>Breadth-First Search (BFS)</center></h1>
+            <p>El Breadth-First Search (BFS) es un algoritmo de búsqueda que comienza en un nodo raíz y explora todos los vecinos de este nodo, luego para cada uno de los vecinos más cercanos, explora sus vecinos no visitados más cercanos, y así sucesivamente.</p>
+            <p>Complejidad Temporal: <b>O(V + E)</b></p>
+            <p>Complejidad Espacial: <b>O(V)</b></p>
+        </div>
+    </section>
+    
+    <section class="algorithm" id="dfs">
+        <img src="assets/img/DFS.webp" alt="Ilustración del Depth-First Search (DFS)">
+        <div>
+            <h1><center>Depth-First Search (DFS)</center></h1>
+            <p>El Depth-First Search (DFS) es un algoritmo de búsqueda que explora tanto como sea posible a lo largo de cada rama antes de retroceder. Este enfoque es utilizado para la clasificación topológica, detectar ciclos, y verificar conectividad en grafos.</p>
+            <p>Complejidad Temporal: <b>O(V + E)</b></p>
+            <p>Complejidad Espacial: <b>O(V)</b></p>
+        </div>
+    </section>
+    
 
 </body>
 

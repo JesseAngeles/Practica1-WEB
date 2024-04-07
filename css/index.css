@@ -1,0 +1,50 @@
+.algorithm {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten según el tamaño de la pantalla */
+    margin-bottom: 40px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.algorithm:nth-child(even) {
+    flex-direction: row-reverse; /* Invierte el orden para las secciones pares */
+}
+
+.algorithm img {
+    flex: 1; /* Permite que la imagen ocupe el espacio disponible */
+    max-width: 50%; /* Limita el ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 20px; /* Añade espacio alrededor de la imagen */
+}
+
+.algorithm div {
+    flex: 1; /* Permite que el div del texto ocupe el espacio disponible */
+    padding: 20px; /* Añade padding alrededor del texto */
+}
+
+p {
+    color: #666;
+    margin: 20px 0; /* Añade espacio arriba y abajo para cada párrafo */
+}
+
+h1 {
+    font-size: 30px;
+}
+
+header h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.introduction h3 {
+    text-align: center;
+    color: #333;
+}
+
+.introduction p {
+    text-align: justify;
+    margin: 20px auto;
+    max-width: 800px; /* Ajusta esto según el diseño de tu página */
+}

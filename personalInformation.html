@@ -1,18 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/personalInformation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Acerca de Mi</title>
 </head>
+
 <body>
     <nav>
         <a href="./index.html">Inicio</a>
-        <a href="./personalInformation.html">Acerca de</a>
-        <a href="./hobbies.html">hobbies</a>
         <a href="./ejercicios.html">Ejercicios</a>
         <a href="./cosie.html">COSIE</a>
+        <a href="./personalInformation.html">Información personal</a>
     </nav>
+
+    <section id="profile-section">
+        <!-- Sección de imagen de perfil -->
+        <div id="profile-image">
+            <img src="./assets/img/profile.png" alt="Imagen de Perfil">
+        </div>
+
+        <!-- Datos Personales ahora dentro del mismo contenedor -->
+        <div id="personal-info">
+            <h2>Datos Personales</h2>
+            <p><b>Nombre:</b> Erick Jesse Angeles López</p>
+            <p><b>Edad:</b> 21 años</p>
+            <p><b>Profesión:</b> Estudiante y programador Jr</p>
+            <section id="social-media">
+                <a href="https://www.linkedin.com/in/angeles-lopez-erick-jesse-04682a23a/" target="_blank"
+                    title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/JesseAngeles" target="_blank" title="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/playlist?list=PLcWq9APij_fckc3b4a82kbO8wqAHQ_G63" target="_blank"
+                    title="Youtube"><i class="fab fa-youtube"></i></a>
+
+            </section>
+        </div>
+    </section>
+
+    <div class="content-container">
+        <section id="about-me">
+            Hola, soy Erick, un apasionado estudiante de Ingeniería en Inteligencia Artificial en la ESCOM (IPN), con
+            raíces académicas en el CECyT 9 Juan de Dios Bátiz donde comenzo mi fascinación por el mundo digital, la
+            tecnología y el desarrollo de software. <br>
+            Mi trayectoria académica ha estado marcada por mi participación activa en competencias de matematicas y
+            algoritmia. Fuera del aula, mis intereses son variados: desde sumergirme en el mundo de los videojuegos,
+            los libros y el ejercicio. <br>
+            Si estás interesado en discutir ideas, colaborar en proyectos o simplemente charlar sobre la última
+            tendencia en
+            IA, videojuegos o algoritmia, no dudes en contactarme. ¡Estoy siempre abierto a nuevas oportunidades y
+            conexiones!
+        </section>
+
+        <section id="contact-info">
+            <h2>Datos de Contacto</h2>
+            <p><i class="fas fa-envelope"></i> <a
+                    href="mailto:angeleslopezerickjesse@gmail.com">angeleslopezerickjesse@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+525526641710">+52 5526641710</a></p>
+        </section>
+    </div>
+
+    <section id="contact-form">
+        <h2>Formulario de Contacto</h2>
+        <form action="submitForm.php" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
 </body>
+
 </html>
